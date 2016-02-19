@@ -1,0 +1,7 @@
+[ZeroR Generated Model]
+Training Set Frequency: Counter({'Stage 3': 49, 'Stage 2': 37, 'Stage 5': 34, 'Healthy': 28, 'Stage 4': 7, 'Stage 1': 5})
+Result (Mode): Stage 3
+
+[ZeroR Tested Models]
+Test Set Frequency: Counter({'Healthy': 43, 'Stage 3': 41, 'Stage 2': 37, 'Stage 5': 29, 'Stage 1': 9})
+Accuracy: 0.25786163522
