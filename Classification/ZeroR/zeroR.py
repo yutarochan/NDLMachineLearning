@@ -23,6 +23,7 @@ labels = data[:,24]
 # Split data into train and test sets
 np.random.shuffle(labels)                   # Randomly shuffle the data
 train, test = np.array_split(labels, 2)     # Split to train and test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 
 # Frequency Computations
 train_freq = collections.Counter(train)     # Generate frequency counts
