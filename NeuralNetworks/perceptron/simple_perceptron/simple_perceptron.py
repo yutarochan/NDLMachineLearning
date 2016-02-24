@@ -14,8 +14,8 @@ def activate(value):
 input = [12, 4]     # Input parameters for perceptron
 weights = [.5, -1]  # Weight parameters for perceptron
 
-# Multiply and sum the input and weight parameters
-result = np.multiply(input, weights).sum()
+# Take the "dot product" of input and weightcl
+result = np.dot(input, weights)
 
 # Display the result of perceptron
 # The total should come out as 2.0
