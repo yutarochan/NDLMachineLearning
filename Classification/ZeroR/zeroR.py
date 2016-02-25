@@ -2,16 +2,8 @@
 ZeroR Classification
 Demonstration of a ZeroR classification process.
 '''
-import os
 import numpy as np
 import collections
-from StringIO import StringIO
-
-# Import Dataset into Numpy Array
-# <Sample Dataset 1>
-# file_dir = '../../datasets/breast-cancer-wisconson/wdbc.data'
-# with open(file_dir, 'r') as data: raw_data = data.read()
-# data = np.genfromtxt(StringIO(raw_data), delimiter=',', dtype="|S10")
 
 # Kidney Disease Sample Dataset
 file_dir = '../../datasets/kidney_disease/Kidney-Disease.csv'
@@ -23,7 +15,6 @@ labels = data[:,24]
 # Split data into train and test sets
 np.random.shuffle(labels)                   # Randomly shuffle the data
 train, test = np.array_split(labels, 2)     # Split to train and test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 
 # Frequency Computations
 train_freq = collections.Counter(train)     # Generate frequency counts
